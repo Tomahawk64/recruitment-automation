@@ -2,13 +2,11 @@
   "name": "recruitment-automation-backend",
   "version": "1.0.0",
   "description": "Backend API for Recruitment Automation",
-  "main": "dist/server.js",
+  "main": "server-mongodb.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "seed": "ts-node src/scripts/seed.ts",
-    "test": "jest --watchAll=false"
+    "start": "node server-mongodb.js",
+    "dev": "nodemon server-mongodb.js",
+    "seed": "node seed-realworld.js"
   },
   "dependencies": {
     "@emailjs/nodejs": "^4.0.3",
